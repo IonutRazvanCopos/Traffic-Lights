@@ -4,6 +4,7 @@ let currentColor = 0;
 
 const colors = ["red", "yellow", "green"];
 const colorsName = ["SET!", "READY!", "GO!"]
+const tenSeconds = 10000;
 
 function changingColor() {
   btn.style.backgroundColor = colors[currentColor];
@@ -14,4 +15,4 @@ function changingColor() {
 
 btn.addEventListener("click", changingColor)
 
-setInterval(changingColor, 10000);
+setInterval(changingColor, tenSeconds);
